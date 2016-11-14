@@ -1,0 +1,22 @@
+{
+	"name": "exam",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"gulp": "^3.9.1",
+	    "vue": "^2.0",
+	    "vue-router": "^2.0.1",
+	    "vue-resource": "^1.0.3"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://git.oschina.net/momentzhj/ZHJ.Exam.git"
+	},
+	"author": "",
+	"license": "ISC"
+}
