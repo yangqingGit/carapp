@@ -6,37 +6,113 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>首页</title>
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-		<link rel="shortcut icon" href="/favicon.ico">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 	</head>
 
-	<body style="overflow: hidden;">
+	<body>
+<div class="page-group">
+        <!-- 单个page ,第一个.page默认被展示-->
+        <div class="page">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a class="icon icon-me pull-left open-panel"></a>
+                <h1 class="title">标题</h1>
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="#">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-star"></span>
+                    <span class="tab-label">收藏</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-settings"></span>
+                    <span class="tab-label">设置</span>
+                </a>
+            </nav>
+
+            <!-- 这里是页面内容区 -->
+            <div class="content">
+                <div class="content-block">
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+					q21323123<br />
+				
+				</div>
+            </div>
+        </div>
+
+        <!-- 其他的单个page内联页（如果有） -->
+        <div class="page">...</div>
+    </div>
+
+    <!-- popup, panel 等放在这里 -->
+    <div class="panel-overlay"></div>
+    <!-- Left Panel with Reveal effect -->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>这是一个侧栏</p>
+            <p></p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><a href="#" class="close-panel">关闭</a></p>
+        </div>
+    </div>
 
 	</body>
 	<script type="text/javascript">
-		var db = openDatabase('testDB', '1.0', 'Test DB', 2 * 1024 * 1024);
-		db.transaction(function(context) {
-			context.executeSql("CREATE TABLE IF NOT EXISTS tk_record(id INTEGER PRIMARY KEY ASC,type INTEGER, strtppe TEXT, strtype_l TEXT, licensetype TEXT" + ",question TEXT,answer_a TEXT,answer_b TEXT,answer_c TEXT,answer_d TEXT,answertrue TEXT,explain TEXT,kemu TEXT,VIDEO_URL TEXT" + ",error INTEGER,moretypes text,chapterid INTEGER,sinaimg TEXT,Image TEXT,diff_degree INTEGER,Issy INTEGER" + ")");
-		});
-		db.transaction(function(context) {
-			context.executeSql('CREATE TABLE IF NOT EXISTS testTable2 (id TEXT, UserName TEXT, content TEXT,createTime TEXT)');
-
-		});
-
-		db.transaction(function(context) {
-			context.executeSql('insert into testTable2 (id ,UserName, content,createTime) VALUES(?,?,?,?)', [1, '123123', 'item.content', 'item.createTime'], function() {
-
-			}, function(tx, error) {
-				//alert('添加数据失败: ' + error.message);
-				console.log(error.message);
-			});
-		}, function() {
-			alert(123)
-		}, function() {
-			alert('ok')
-		});
 	</script>
 
 </html>
