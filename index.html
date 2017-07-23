@@ -7,8 +7,11 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- <link rel="stylesheet" href="https://fonts.css.network/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="https://fonts.css.network/icon?family=Material+Icons"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <style>
         body {
             background: #eee;
@@ -47,10 +50,14 @@
             position: absolute;
             top: 56px;
             bottom: 0;
+            left: 0;
+            right: 0;
             width: 100%;
             position: absolute;
             overflow: auto;
             -webkit-overflow-scrolling: touch;
+            overflow: hidden;
+            overflow-y: auto;
         }
         
         .header {
@@ -99,6 +106,22 @@
         
         a {
             color: black;
+        }
+        
+        hidec {
+            display: none;
+        }
+        
+        .mu-popup {
+            width: 100%;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 0;
+        }
+        
+        .mu-content-block {
+            padding: 5px !important;
         }
     </style>
 </head>

@@ -5,8 +5,18 @@ import App from './App'
 import router from './router'
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
-Vue.use(MuseUI)
+import Vuex from 'vuex'
+import store from './vuex/store'
 
+Vue.use(MuseUI)
+Vue.use(Vuex)
+
+// const store = new Vuex.Store({
+//     // 定义状态
+//     state: {
+//         author: 'Wise Wrong'
+//     }
+// })
 
 Vue.config.productionTip = false
 
@@ -14,6 +24,7 @@ Vue.config.productionTip = false
 new Vue({
     el: '#app',
     router,
+    store: store, //注入到vue
     template: '<App/>',
     components: { App }
 })

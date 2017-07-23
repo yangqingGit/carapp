@@ -2,11 +2,11 @@
   <div id="home">
      
      <div class="page">
-        <mu-row style="padding:0">
-          <mu-col width="100" tablet="50" desktop="33" class="adimg">
-              <img src="./../assets/advertise.jpg">
-            </mu-col>
-        </mu-row>
+      <mu-row style="padding:0">
+        <mu-col width="100" class="adimg">
+          <img src="http://jptest5.xuechebu.com/zhjtest/img/advertise.jpg">
+        </mu-col>
+      </mu-row>
       <div class="demo-grid">
         <mu-row gutter>
          
@@ -54,15 +54,37 @@
         </mu-row>
       </div>
      </div>
-
-    
   </div>
 </template>
 
 <script>
 import headercomponent from './../components/header.vue'
 export default {
- components: { headercomponent }
+ components: { headercomponent },
+  beforeCreate: function () {
+      console.log(' home :beforeCreate is triggered.')
+  },
+  created: function () {
+      console.log(' home :created is triggered.')
+  },
+  beforeMount: function () {
+      console.log(' home :beforeMount is triggered.')
+  },
+  mounted: function () {
+      console.log(' home :mounted is triggered.')
+  },
+  beforeUpdate: function () {
+      console.log(' home :beforeUpdate is triggered.')
+  },
+  updated: function () {
+      console.log(' home :updated is triggered.')
+  },
+  beforeDestroy: function () {
+      console.log(' home :beforeDestroy is triggered.')
+  },
+  destroyed: function () {
+      console.log(' home :destroyed is triggered.')
+  }
 }
 </script>
 

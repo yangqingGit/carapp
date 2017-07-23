@@ -1,18 +1,17 @@
 <template>
   <div id="circle">
-           
-             <div class="page">
-<div class="gridlist-demo-container">
-  <mu-grid-list class="gridlist-demo">
-    <mu-grid-tile v-for="tile, index in list" key="index" :rows="tile.featured ? 1 : 1" :cols="tile.featured ? 2 : 1">
-      <img class="qzimg" :src="tile.image">
-      <span slot="title">{{tile.title}}</span>
-      <span slot="subTitle">{{tile.author}}</span>
-      <mu-icon-button icon="star_border" slot="action"></mu-icon-button>
-    </mu-grid-tile>
-  </mu-grid-list>
-</div>
-</div>
+     <div class="page">
+      <div class="gridlist-demo-container">
+        <mu-grid-list class="gridlist-demo">
+          <mu-grid-tile v-for="tile, index in list" :key="index" :rows="tile.featured ? 1 : 1" :cols="tile.featured ? 2 : 1">
+            <img class="qzimg" :src="tile.image">
+            <span slot="title">{{tile.title}}</span>
+            <span slot="subTitle">{{tile.author}}</span>
+            <mu-icon-button icon="star_border" slot="action"></mu-icon-button>
+          </mu-grid-tile>
+        </mu-grid-list>
+      </div>
+    </div>
   </div>
 </template>
 

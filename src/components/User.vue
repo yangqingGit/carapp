@@ -1,11 +1,11 @@
 <template>
   <div id="user">
      <div class="page">
-         <mu-paper class="demo-menu">
+          <mu-paper class="demo-menu">
         <mu-row gutter>
             <mu-col width="100" tablet="100" desktop="100" class="asd">
                  <mu-card-header title="半空清风送十里桃花红" subTitle="那些不能相信的事情 请让我来证明" titleClass="nametitle">
-                    <mu-avatar src="http://www.muse-ui.org/images/uicon.jpg" slot="avatar" size="60" />
+                    <mu-avatar src="http://www.muse-ui.org/images/uicon.jpg" slot="avatar" size=60 />
                 </mu-card-header>
             </mu-col>
         </mu-row>
@@ -37,7 +37,7 @@
             <mu-divider />
             </mu-menu>
         </mu-paper>
-        <br>
+        <br> 
      </div>
   </div>
 </template>
