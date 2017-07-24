@@ -7,7 +7,9 @@ import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 import Vuex from 'vuex'
 import store from './vuex/store'
+import VueResource from 'vue-resource'
 
+Vue.use(VueResource);
 Vue.use(MuseUI)
 Vue.use(Vuex)
 

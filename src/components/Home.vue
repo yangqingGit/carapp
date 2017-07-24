@@ -63,8 +63,38 @@ export default {
  components: { headercomponent },
   beforeCreate: function () {
       console.log(' home :beforeCreate is triggered.')
+   
+
   },
   created: function () {
+      //  this.$http.get('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist', []).then(function(response){
+      //     var o = 1;
+      // }, function(response){
+      // });
+      // this.$http.get('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist', []).then((response) => {
+      // }, (response) => {
+      // });
+
+      // this.$http.put('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist', []).then((response) => {
+      //   }, (response) => {
+      // });
+      // this.$http.delete('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist', []).then((response) => {
+      //   }, (response) => {
+      // });
+      
+      // this.$http.post('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist', []).then((response) => {
+      //   }, (response) => {
+      // });
+
+      this.$http.jsonp('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist?&ISJSONP=true').then(
+      (response) => {
+        var o =1;
+        // debugger;
+        },
+      (response) => {
+        
+        });
+
       console.log(' home :created is triggered.')
   },
   beforeMount: function () {
@@ -72,6 +102,7 @@ export default {
   },
   mounted: function () {
       console.log(' home :mounted is triggered.')
+
   },
   beforeUpdate: function () {
       console.log(' home :beforeUpdate is triggered.')
