@@ -81,7 +81,6 @@ export default {
       // this.$http.delete('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist', []).then((response) => {
       //   }, (response) => {
       // });
-      
       // this.$http.post('//jptest4.xuechebu.com/bbsapi/classify/getclassifylist', []).then((response) => {
       //   }, (response) => {
       // });
