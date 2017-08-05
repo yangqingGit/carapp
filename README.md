@@ -4,4 +4,4 @@
 
 ## 项目预览图
 
-<img src="src/preview/home.png"  alt="nicefish-jigsaw"/>
+<img src="preview/home.png"  alt="nicefish-jigsaw"/>
