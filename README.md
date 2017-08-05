@@ -4,4 +4,4 @@
 
 ## 项目预览图
 
-![image](http://git.oschina.net/momentzhj/ZHJ.Exam/blob/master/preview/home.png)
+![image](src/preview/home.png)
