@@ -42,7 +42,7 @@
           <mu-col width="50" tablet="30" desktop="25">
             我的错题
           </mu-col>
-          <mu-col width="50" tablet="30" desktop="25">col-50
+          <mu-col width="50" tablet="30" desktop="25">
             我的收藏
           </mu-col>
           <mu-col width="50" tablet="20" desktop="25">
