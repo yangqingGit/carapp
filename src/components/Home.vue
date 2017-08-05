@@ -3,8 +3,8 @@
      
      <div class="page">
       <mu-row style="padding:0">
-        <mu-col width="100" class="adimg">
-          <img src="http://jptest5.xuechebu.com/zhjtest/img/advertise.jpg">
+        <mu-col width="100" class="adimg" style="width: 100%;">
+          <img style="width:100%" src="./../assets/lunbo.jpg">
         </mu-col>
       </mu-row>
       <div class="demo-grid">

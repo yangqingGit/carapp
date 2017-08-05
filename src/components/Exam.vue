@@ -4,35 +4,16 @@
 
 		<div class="examcontent">
 		 <mu-row gutter>
+			 
 			<mu-col width="30" tablet="50" desktop="33" class="flex-demo">交卷</mu-col>
 			<mu-col width="40" tablet="50" desktop="33" class="flex-demo">正确：10 错误：10</mu-col>
 			<mu-col width="30" tablet="50" desktop="33" class="flex-demo" > <div @click="open('bottom')">1/100</div> </mu-col>
 		</mu-row>
-
-
-<!-- 
-			<mu-flexbox gutter = 0 >
-				<mu-flexbox-item class="flex-demo">
-					交卷
-				</mu-flexbox-item>
-				<mu-flexbox-item class="flex-demo">
-					正确：10 错误：10
-				</mu-flexbox-item>
-				
-					<mu-flexbox-item class="flex-demo" >
-						<div @click="open('bottom')">
-						1/100
-						</div>
-					</mu-flexbox-item>
-					
-			</mu-flexbox> -->
-	
 			<mu-col width="100"style="padding:1rem 0">
 				驾驶机动车在道路上违反道路交通安全法的行为，属于什么行为？
 			</mu-col>
 			<mu-col width="100">
-					<img src="http://file.open.jiakaobaodian.com/tiku/res/802800.jpg" width="100%">
-					<!-- {{count}} -->
+				<img src="http://file.open.jiakaobaodian.com/tiku/res/802800.jpg" width="100%">
 			</mu-col>
 		</mu-row>
 		<mu-row gutter>
@@ -57,25 +38,20 @@
 				</mu-row>
 			</div>
 		</div>
-					  <mu-popup position="bottom" popupClass="popup-bottom" :open="bottomPopup" @close="close('bottom')" style ="width:100%">
-						<mu-appbar title="">
-							<mu-flat-button slot="right" label="关闭" color="white" @click="close('bottom')"/>
-						</mu-appbar>
-						<mu-content-block>
-							<div class="thcon">
-									<ul>
-										<li v-for="tile, index in list" :key="index">
-											<div class="xhsl"><span>{{index+1}}</span></div>
-										</li>
-
-										<!-- <li><div class="xhsl"><span>1</span></div></li>
-										<li><div class="xhsl"><span>1</span></div></li>
-										<li><div class="xhsl"><span>1</span></div></li>
-										<li><div class="xhsl"><span>1</span></div></li> -->
-									</ul>
-							</div>
-						</mu-content-block>
-					</mu-popup>
+		<mu-popup position="bottom" popupClass="popup-bottom" :open="bottomPopup" @close="close('bottom')" style ="width:100%">
+		<mu-appbar title="">
+			<mu-flat-button slot="right" label="关闭" color="white" @click="close('bottom')"/>
+		</mu-appbar>
+		<mu-content-block>
+			<div class="thcon">
+					<ul>
+						<li v-for="tile, index in list" :key="index">
+							<div class="xhsl"><span>{{index+1}}</span></div>
+						</li>
+					</ul>
+			</div>
+		</mu-content-block>
+	</mu-popup>
   </div>
 </template>
 

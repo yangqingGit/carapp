@@ -3,8 +3,11 @@
   <div class="header">
     <div v-if="rout == 'exam'">
         <mu-appbar title="驾考题库" titleClass="commcolor">
-          <mu-raised-button label="答题模式" class="headerbtn" @click="ifmsfunc(true)" backgroundColor="#00b0ff" primary/>
-          <mu-raised-button label="背题模式" class="headerbtn" @click="ifmsfunc(false)" backgroundColor="#00b0ff" primary/> 
+          <mu-icon-button icon="keyboard_arrow_left" slot="left" @click="$router.back(-1)" titleClass="commcolor"/>
+          <mu-raised-button label="答题模式" class="headerbtn" @click="ifmsfunc(true)" primary/>
+          <mu-raised-button label="背题模式" class="headerbtn" @click="ifmsfunc(false)" primary/> 
+          
+          <mu-icon-button icon="" slot="right" titleClass="commcolor"/>
         </mu-appbar>
     </div>
     <div v-else>
@@ -17,7 +20,6 @@
   <div>
     <mu-drawer :open="open" :docked="docked" @close="toggle()">
         <!-- <mobile-tear-sheet>
-         
         </mobile-tear-sheet> -->
          <mu-list>
             <mu-card-header title="半空清风送十里桃花红">
@@ -65,7 +67,9 @@ export default {
     return {
       open: false,
       docked: true,
-      rout: this.$route.name
+      rout: this.$route.name,
+      leftTop: {horizontal: 'left', vertical: 'top'},
+      leftBottom: {horizontal: 'left', vertical: 'bottom'},
     }
   },
   methods: {
@@ -120,5 +124,7 @@ export default {
 }
 .headerbtn{
   font-size: 1rem;
+  background-color: #2962ff;
+  
 }
 </style>

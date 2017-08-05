@@ -1,4 +1,4 @@
-<template>
+<template >
   <div id="nav">
     <mu-paper>
         <mu-bottom-nav :value="bottomNav" shift  @change="handleChange">
