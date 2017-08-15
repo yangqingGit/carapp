@@ -9,3 +9,4 @@
 <img src="preview/quanzi.png"  width="450"/> <br />
 <img src="preview/user.png"  width="450"/> <br />
 <img src="preview/exam.png"  width="450"/> <br />
+<img src="preview/paihang.png"  width="450"/> <br />
