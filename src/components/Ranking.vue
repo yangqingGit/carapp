@@ -7,30 +7,30 @@
         <mu-tab value="tab3" title="本月"/>
     </mu-tabs>
     
-    <div v-if="activeTab === 'tab1'" style="margin-top: 50px;">
-    <mu-list>
-        <div v-for="item, index in list" >
-            <mu-list-item v-bind:title="item.username" >
-            <mu-avatar src="http://www.muse-ui.org/images/uicon.jpg" slot="leftAvatar"/>
-            <span class="fs">
-                {{item.fenshu}}
-            </span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span>
-                {{item.sj}}
-            </span>
-            <span class="ph">
-                <span>{{index + 1 }}</span>
-            </span>
-            <mu-icon-menu slot="right" icon="more_vert" tooltip="操作">
-                <mu-menu-item title="PK" />
-                <mu-menu-item title="关注" />
-                <mu-menu-item title="私信" />
-            </mu-icon-menu>
-            </mu-list-item>
-            <mu-divider inset/>
-        </div>
-    </mu-list>
+    <div v-if="activeTab === 'tab1'" style="margin-top: 50px;height:100%;width:100%">
+        <mu-list>
+            <div v-for="item, index in list" v-bind:key="index">
+                <mu-list-item v-bind:title="item.username">
+                <mu-avatar src="http://www.muse-ui.org/images/uicon.jpg" slot="leftAvatar"/>
+                <span class="fs">
+                    {{item.fenshu}}
+                </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    {{item.sj}}
+                </span>
+                <span class="ph">
+                    <span>{{index + 1 }}</span>
+                </span>
+                <mu-icon-menu slot="right" icon="more_vert" tooltip="操作">
+                    <mu-menu-item title="PK" />
+                    <mu-menu-item title="关注" />
+                    <mu-menu-item title="私信" />
+                </mu-icon-menu>
+                </mu-list-item>
+                <mu-divider inset/>
+            </div>
+        </mu-list>
   
     </div>
     <div v-if="activeTab === 'tab2'" style="margin-top: 50px;">
@@ -138,6 +138,9 @@ export default {
 .tbs{
     background: #657cc7;
     position: fixed;
+    
+    left: 0;
+    right: 0;
 }
 .ph{
     font-size: 1.3rem;

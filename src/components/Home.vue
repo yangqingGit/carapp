@@ -9,10 +9,8 @@
       </mu-row>
       <div class="demo-grid">
         <mu-row gutter>
-          <mu-col width="25" tablet="30" desktop="25" class="">
-             <router-link to="/exam" class="cols">
-            顺序练习
-            </router-link>
+          <mu-col width="25" tablet="30" desktop="25">
+             <router-link to="/exam" class="cols">顺序练习</router-link>
           </mu-col>
           <mu-col width="25" tablet="30" desktop="25">
            <router-link to="/exam" class="cols"> 随机练习 </router-link>
@@ -36,7 +34,7 @@
             <router-link to="/exam" class="cols">考试记录 </router-link>
           </mu-col>
         </mu-row>
-        <mu-row>
+        <mu-row gutter>
           <mu-col width="50" tablet="30" desktop="25">
             <router-link to="/exam" class="cols">我的错题 </router-link>
           </mu-col>
@@ -122,7 +120,6 @@ export default {
   text-align: center;
   color: #000;
   border: 1px solid #ddd;
-  /* padding: 8px; */
   margin-bottom: 8px;
 }
 .demo-grid .col{
