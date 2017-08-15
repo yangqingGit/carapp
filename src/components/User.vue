@@ -2,41 +2,40 @@
   <div id="user">
      <div class="page">
           <mu-paper class="demo-menu">
-        <mu-row gutter>
-            <mu-col width="100" tablet="100" desktop="100" class="asd">
-                 <mu-card-header title="半空清风送十里桃花红" subTitle="那些不能相信的事情 请让我来证明" titleClass="nametitle">
-                    <mu-avatar src="http://www.muse-ui.org/images/uicon.jpg" slot="avatar" size=60 />
+                <mu-card-header title="半空清风送十里桃花红" subTitle="那些不能相信的事情 请让我来证明" titleClass="nametitle">
+                    <mu-avatar src="http://www.muse-ui.org/images/uicon.jpg" slot="avatar" class="userphoto" />
                 </mu-card-header>
-            </mu-col>
-        </mu-row>
         </mu-paper>
         <br >
+
         <mu-paper class="demo-menu">
-            <mu-menu-item title="我的钱包" rightIcon="keyboard_arrow_right"/>
+            <mu-list-item title="我的钱包">
+            <mu-icon slot="right" value="keyboard_arrow_right"/>
+            </mu-list-item>
             <mu-divider />
-            <mu-menu-item title="我的收藏" rightIcon="keyboard_arrow_right"/>
-            <mu-divider />
-            </mu-menu>
+            <mu-list-item title="我的收藏">
+            <mu-icon slot="right" value="keyboard_arrow_right"/>
+            </mu-list-item>
         </mu-paper>
         <br>
-        <mu-paper class="demo-menu">
+         <mu-paper class="demo-menu">
+            <mu-list-item title="附近的人">
+            <mu-icon slot="right" value="keyboard_arrow_right"/>
+            </mu-list-item>
             <mu-divider />
-            <mu-menu-item title="附近的人" rightIcon="keyboard_arrow_right"/>
-            <mu-divider />
-             <mu-menu-item title="漂流瓶" rightIcon="keyboard_arrow_right"/>
-            <mu-divider />
-            <mu-menu-item title="摇一摇" rightIcon="keyboard_arrow_right"/>
-            <mu-divider />
-            </mu-menu>
+            <mu-list-item title="漂流瓶">
+            <mu-icon slot="right" value="keyboard_arrow_right"/>
+            </mu-list-item>
+             <mu-list-item title="摇一摇">
+            <mu-icon slot="right" value="keyboard_arrow_right"/>
+            </mu-list-item>
         </mu-paper>
-        <br>
-        <mu-paper class="demo-menu">
-            <mu-divider />
-            <mu-menu-item title="设置" rightIcon="keyboard_arrow_right"/>
-            <mu-divider />
-            </mu-menu>
+         <br>
+          <mu-paper class="demo-menu">
+            <mu-list-item title="设置">
+            <mu-icon slot="right" value="keyboard_arrow_right"/>
+            </mu-list-item>
         </mu-paper>
-        <br> 
      </div>
   </div>
 </template>
@@ -44,6 +43,11 @@
 <script>
 import headercomponent from './../components/header.vue'
 export default {
+    methods: {
+        abc () {
+            alert(123)
+        }
+  },
  components: { headercomponent }
 }
 </script>
@@ -59,5 +63,12 @@ export default {
 .nametitle{
     margin-top: .8rem;
     font-weight: bold;
+}
+.userphoto{
+    width: 4rem;
+    height: 4rem;
+}
+.user-item{
+    height: 100%;
 }
 </style>

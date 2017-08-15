@@ -144,7 +144,8 @@ export default {
     color: #ec3838;
     margin-top: -3rem;
     position: absolute;
-    margin-left: 13rem;
+    /* margin-left: 13rem; */
+    right: 4rem;
     width: 2.8rem;
     height: 2.8rem;
     background-color:#e8e2e2;
@@ -154,7 +155,6 @@ export default {
 .ph span{
     width: 2.8rem;
     height: 2.8rem;
-    
     line-height: 2.8rem;
     text-align: center;
     display:block;
