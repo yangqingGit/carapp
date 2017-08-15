@@ -9,47 +9,45 @@
       </mu-row>
       <div class="demo-grid">
         <mu-row gutter>
-         
-          <mu-col width="25" tablet="30" desktop="25">
-             <router-link to="/exam" style="width:100%;height:100%;display: block;">
+          <mu-col width="25" tablet="30" desktop="25" class="">
+             <router-link to="/exam" class="cols">
             顺序练习
             </router-link>
           </mu-col>
-          
           <mu-col width="25" tablet="30" desktop="25">
-            随机练习
+           <router-link to="/exam" class="cols"> 随机练习 </router-link>
           </mu-col>
           <mu-col width="25" tablet="20" desktop="25">
-            专项练习
+            <router-link to="/exam" class="cols">专项练习 </router-link>
           </mu-col>
           <mu-col width="25" tablet="20" desktop="25">
-            未做题
-          </mu-col>
-          <mu-col width="25" tablet="30" desktop="25">
-            模拟考试
+            <router-link to="/exam" class="cols">未做题 </router-link>
           </mu-col>
           <mu-col width="25" tablet="30" desktop="25">
-            名师题库
+            <router-link to="/exam" class="cols">模拟考试 </router-link>
+          </mu-col>
+          <mu-col width="25" tablet="30" desktop="25">
+            <router-link to="/exam" class="cols">名师题库 </router-link>
           </mu-col>
           <mu-col width="25" tablet="20" desktop="25">
-            排行榜
+            <router-link to="/ranking" class="cols">排行榜 </router-link>
           </mu-col>
           <mu-col width="25" tablet="20" desktop="25">
-            考试记录
+            <router-link to="/exam" class="cols">考试记录 </router-link>
           </mu-col>
         </mu-row>
         <mu-row>
           <mu-col width="50" tablet="30" desktop="25">
-            我的错题
+            <router-link to="/exam" class="cols">我的错题 </router-link>
           </mu-col>
           <mu-col width="50" tablet="30" desktop="25">
-            我的收藏
+            <router-link to="/exam" class="cols">我的收藏 </router-link>
           </mu-col>
           <mu-col width="50" tablet="20" desktop="25">
-            交通错题
+            <router-link to="/exam" class="cols">交通错题 </router-link>
           </mu-col>
           <mu-col width="50" tablet="20" desktop="25">
-            法规技巧
+            <router-link to="/exam" class="cols">法规技巧 </router-link>
           </mu-col>
         </mu-row>
       </div>
@@ -139,5 +137,9 @@ export default {
 }
 a{
 	color: black;
+}
+.cols{
+  line-height: 60px;
+  width:100%;height:100%;display: block;
 }
 </style>

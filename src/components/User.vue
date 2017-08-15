@@ -27,7 +27,6 @@
             <mu-divider />
             <mu-menu-item title="摇一摇" rightIcon="keyboard_arrow_right"/>
             <mu-divider />
-            
             </mu-menu>
         </mu-paper>
         <br>
@@ -50,17 +49,6 @@ export default {
 </script>
 
 <style>
-.demo-grid div[class*="col-"] {
-  background: #fff;
-  text-align: center;
-  color: #000;
-  border: 1px solid #ddd;
-  padding: 8px;
-  margin-bottom: 8px;
-}
-.demo-grid .col{
-  height: 3.8rem;
-}
 .adimg{
   margin: 0;
 }

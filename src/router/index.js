@@ -5,6 +5,7 @@ import Exam from '@/components/Exam'
 import Home from '@/components/Home'
 import Circle from '@/components/Circle'
 import User from '@/components/User'
+import Ranking from '@/components/Ranking'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ export default new Router({
             path: '/user',
             name: 'user',
             component: User
+        },
+        {
+            path: '/ranking',
+            name: 'ranking',
+            component: Ranking
         }
     ]
 })
